@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import { StaticImage } from 'gatsby-plugin-image'
-import {Link , graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import RecipesList from '../components/RecipesList'
 
 const Contact = ({data})=> {
@@ -26,7 +26,7 @@ const Contact = ({data})=> {
                         </p>
                     </article>
                     <article>
-                        <form className="form contact-form">
+                        <form className="form contact-form"  action="https://formspree.io/f/xknkyyvg" method="POST">
                             <div className="form-row">
                                 <label htmlFor="name">Your Name </label>
                                 <input type="text" name="name" id="name" />

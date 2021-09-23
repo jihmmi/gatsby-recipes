@@ -4,12 +4,14 @@ import { graphql,Link } from 'gatsby'
 import { GatsbyImage,getImage } from 'gatsby-plugin-image'
 import {BsClockHistory,BsClock,BsPeople} from 'react-icons/bs'
 import slugify from 'slugify'
+import SEO from '../components/SEO'
 
 const RecipeTemplate = (props) => {
     const {title,cookTime,prepTime,servings,image,content:{ingredients,instructions,tools,tags},description:{description} } = props.data.contentfulRecipe
     const srcImage = getImage(image)
     return (
       <Layout>
+        <SEO title={title} description={`This is ${title} page`}/>
         <main className="page">          
           <div className="recipe-page">
             <section className="recipe-hero">

@@ -41,7 +41,32 @@ module.exports = {
                 // Learn about environment variables: https://gatsby.dev/env-vars
                 accessToken: process.env.CONTENTFUL_API_KEY,
               },
-            },                                    
+            },
+            {
+              resolve: `gatsby-plugin-webfonts`,
+              options: {
+                fonts: {
+                  google: [
+                    {
+                      family: "Montserrat",
+                      variants: ["400"],
+                      //subsets: ['latin']
+                      //text: 'Hello'
+                      //fontDisplay: 'swap',
+                      //strategy: 'selfHosted' // 'base64' || 'cdn'
+                    },
+                    {
+                      family: "Inconsolata",
+                      variants: ["400", "500", "600"],
+                      //subsets: ['latin']
+                      //text: 'Hello'
+                      //fontDisplay: 'swap',
+                      //strategy: 'selfHosted' // 'base64' || 'cdn'
+                    },                    
+                  ],
+                },}},
+                `gatsby-plugin-react-helmet`, 
+                                               
           ],
           
 }
