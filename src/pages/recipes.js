@@ -7,7 +7,7 @@ const Recipes = () => {
     return (
         <Layout>
             <SEO title="Recipes" description="This is recipes page"/>
-            <h2>Hello from recepes page</h2>
+            <h2>Recipes</h2>
             <main className="page">
             
             <AllRecipes/>
